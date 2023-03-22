@@ -1,5 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap");
 * {
   margin: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html body {
+  width: 100vw;
+  font-size: 14px;
+  background-color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, "Roboto",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+h1 {
+  font-size: 3em;
+  line-height: 3.1em;
+  padding-bottom: 1em;
+}
+h2 {
+  font-size: 1.375;
+  line-height: 1.5em;
+  padding-bottom: 1em;
+}
+
+p {
+  line-height: 1.8em;
+  padding-bottom: 1.2em;
+}
+
+.btn {
+  padding: 1em 1.2em 1em 1.2em;
+  text-transform: uppercase;
+  color: #68dacd;
+  background-color: transparent;
+  border: #68dacd solid;
+  font-size: 1em;
+}
+header {
+  background-image: url(images/bgk-header.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 80vh;
 }
 nav {
   color: red;
@@ -7,10 +52,37 @@ nav {
 #hero-section {
   color: blue;
 }
+
+/*CSS Styles - Story Section */
+
 #our_story-section {
-  color: green;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-left: 30em;
+  padding-right: 30em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
+.story-wrapper {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-story-wrapper {
+  padding: 3em;
+}
+.text-story-wrapper {
+  padding: 3em;
+}
+
 #watch-section {
+  background-image: url(images/bgk-middle.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 80vh;
   color: darkred;
 }
 #expertise-section {
@@ -23,5 +95,9 @@ nav {
   color: lightsalmon;
 }
 footer {
+  background-image: url(images/bgk-footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50em;
   color: blueviolet;
 }
