@@ -40,6 +40,11 @@ p {
   border: #68dacd solid;
   font-size: 1em;
 }
+.divider {
+  width: 5em;
+  border: #68dacd solid;
+}
+
 header {
   background-image: url(images/bgk-header.png);
   background-repeat: no-repeat;
@@ -53,7 +58,7 @@ nav {
   color: blue;
 }
 
-/*CSS Styles - Story Section */
+/* Story Section */
 
 #our_story-section {
   background-color: lightgray;
@@ -85,12 +90,32 @@ nav {
   height: 80vh;
   color: darkred;
 }
+/* Expertise Section */
+
 #expertise-section {
-  color: fuchsia;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-left: 30em;
+  padding-right: 30em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
+.expertise-wrapper {
+}
+
+.expertise-text-wrapper {
+}
+.grid-expertise-container {
+}
+
 #team-section {
   color: yellowgreen;
 }
+
+/* Expertise Section */
+
 #contact_client-section {
   color: lightsalmon;
 }
