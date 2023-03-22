@@ -41,6 +41,7 @@ p {
   font-size: 1em;
 }
 .divider {
+  display: flex;
   width: 5em;
   border: #68dacd solid;
 }
@@ -103,18 +104,26 @@ nav {
   padding-bottom: 5em;
 }
 .expertise-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  align-items: center;
+  text-align: center;
 }
 
 .expertise-text-wrapper {
+  display: flex;
 }
 .grid-expertise-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #team-section {
   color: yellowgreen;
 }
 
-/* Expertise Section */
+/* Contact Client Section */
 
 #contact_client-section {
   color: lightsalmon;
