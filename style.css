@@ -39,6 +39,7 @@ p {
   background-color: transparent;
   border: #68dacd solid;
   font-size: 1em;
+  width: 11em;
 }
 .divider {
   display: flex;
@@ -66,7 +67,6 @@ nav {
 /* Story Section */
 
 #our_story-section {
-  background-color: lightgray;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -101,12 +101,9 @@ nav {
 /* Expertise Section */
 
 #expertise-section {
-  background-color: lightgray;
   display: flex;
   justify-content: center;
   align-content: center;
-  padding-left: 30em;
-  padding-right: 30em;
   padding-top: 5em;
   padding-bottom: 5em;
 }
@@ -122,8 +119,26 @@ nav {
   display: flex;
 }
 .grid-expertise-container {
+  margin-top: 5em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+}
+.grid-item-expertise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid #ced4da;
+}
+
+.grid-item-expertise img,
+h3,
+p {
+  padding-bottom: 1em;
+}
+
+.grid-expertise-container .grid-item-expertise {
+  padding: 2em;
 }
 
 #team-section {
@@ -133,8 +148,77 @@ nav {
 /* Contact Client Section */
 
 #contact_client-section {
-  color: lightsalmon;
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
+
+.client-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1000px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  column-gap: 3em;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5em;
+}
+
+.happy-client-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 500px;
+}
+
+form input {
+  height: 3em;
+  border: #ced4da 1px solid;
+  margin-bottom: 1.5em;
+  padding-left: 1em;
+}
+input textarea::placeholder {
+  color: lightgray;
+  opacity: 0.5;
+}
+
+form textarea {
+  height: 20em;
+  border: #ced4da 1px solid;
+  margin-bottom: 1.5em;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.client-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  object-fit: cover;
+  width: 500px;
+  gap: 3em;
+}
+
+.img-client-wrapper > img {
+  object-fit: cover;
+  width: 60%;
+  max-height: 100%;
+}
+
 footer {
   background-image: url(images/bgk-footer.png);
   background-repeat: no-repeat;
@@ -142,6 +226,5 @@ footer {
   height: 50em;
   color: blueviolet;
 }
-.divider{
- 
+.divider {
 }
