@@ -123,7 +123,20 @@ nav {
 }
 .grid-expertise-container {
   display: grid;
+  width: 100%;
+  grid-auto-flow: 1fr;
+  grid-column-gap: 0em;
+  grid-row-gap: 0em;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.grid-item-expertise {
+  display: flex;
+  flex-direction: column;
+}
+.grid-item-expertise img {
+  height: 50px;
+  width: 100%;
 }
 
 #team-section {
