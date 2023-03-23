@@ -27,6 +27,7 @@ h2 {
   padding-bottom: 1em;
 }
 
+
 p {
   line-height: 1.8em;
   padding-bottom: 1.2em;
@@ -50,17 +51,67 @@ p {
 
 header {
   background-image: url(images/bgk-header.png);
-  background-repeat: no-repeat;
   background-size: 100%;
   height: 80vh;
   display: flex;
-  justify-content: center;
+
+  flex-direction: column;
 }
 nav {
-  color: red;
+  border: 2px solid green;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+  
+  
+  
+}
+
+.nav-right{
+  width: 80%;
+  border:2px solid #68dacd;
+  text-transform: uppercase;
+  
+  
+}
+
+.nav-left{
+  border:2px solid #68dacd;
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav-right ul{
+  display: flex;
+
+  justify-content: space-between;
+
+}
+.nav-right li{
+  align-items: center;
+  padding-top: 20px;
+  justify-content: space-around;
 }
 #hero-section {
-  color: blue;
+  border: solid green;
+  color: white;
+  
+
+}
+#hero-section h1{
+  text-align: center;
+  
+}
+#hero-section p{
+  text-align: center;
+  display: flex;
+
 }
 
 /* Story Section */
@@ -127,7 +178,90 @@ nav {
 }
 
 #team-section {
-  color: yellowgreen;
+  
+  background: url(images/bgk-header.png);
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+}
+.team-wrapper{
+
+justify-content: center;
+align-items: center;
+padding-left: 100px;
+padding-right: 100px;
+
+
+}
+.team-wrapper h2{
+
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+
+}
+
+.team-wrapper p{
+
+  text-align: center;
+  padding-top: 10px;
+  
+
+}
+
+.line{
+  
+  width: 5em;
+  border: #68dacd solid;
+  display: inline-block;
+  vertical-align: middle;
+  
+
+}
+
+  
+
+.team{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap:40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px ;
+  padding-right: 100px;
+  padding-top: 10px;
+  
+
+}
+
+.grid-item{
+  
+  border: 1px solid lightgray;
+}
+.grid-item p{
+  font-size: 10px;
+  text-align: center;
+
+}
+.grid-item h3{
+  font-size: 15px;
+  padding-top:10px;
+  text-align: center;
+}
+.teams-box{
+  
+  width: 140px;
+  height: 150px;
+  background-color: white;
+
+
+  
+  
 }
 
 /* Contact Client Section */
