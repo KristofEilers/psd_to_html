@@ -44,6 +44,8 @@ p {
   display: flex;
   width: 5em;
   border: #68dacd solid;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 header {
@@ -51,6 +53,8 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 80vh;
+  display: flex;
+  justify-content: center;
 }
 nav {
   color: red;
@@ -90,6 +94,9 @@ nav {
   background-size: 100%;
   height: 80vh;
   color: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Expertise Section */
 
@@ -134,4 +141,7 @@ footer {
   background-size: cover;
   height: 50em;
   color: blueviolet;
+}
+.divider{
+ 
 }
