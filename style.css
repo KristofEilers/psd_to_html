@@ -360,5 +360,22 @@ footer {
   height: 50em;
   color: blueviolet;
 }
-.divider {
+
+.footer-wrapper{
+  border:2px solid #68dacd;
+
+}
+
+.company{
+
+  border: 2px solid green;
+}
+
+.company{
+
+  border: 2px solid green;
+}
+.item-logo{
+
+  border: 2px solid green;
 }
