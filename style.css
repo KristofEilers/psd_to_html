@@ -55,11 +55,13 @@ header {
   background-size: 100%;
   height: 80vh;
   display: flex;
-
+  
   flex-direction: column;
-}
+  }
+
+
 nav {
-  border: 2px solid green;
+
   color: white;
   display: flex;
   justify-content: space-between;
@@ -67,6 +69,7 @@ nav {
   padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
+  width: 100%;
   
   
   
@@ -75,35 +78,54 @@ nav {
 
 .nav-right{
   width: 80%;
-  border:2px solid #68dacd;
   text-transform: uppercase;
   
   
 }
 
 .nav-left{
-  border:2px solid #68dacd;
+  
   display: flex;
   align-items: center;
+  
+  
   
 }
 
 .nav-right ul{
   display: flex;
-
+  text-decoration: none;
+  list-style: none;
   justify-content: space-between;
+  font-weight: 400;
+  
 
 }
 .nav-right li{
   align-items: center;
   padding-top: 20px;
   justify-content: space-around;
+  text-decoration: none;
 }
 #hero-section {
-  border: solid green;
+  
   color: white;
+  align-items: center;
+  display: flex;
+  flex-shrink: 50%;
+  
   
 
+}
+.button-hero{
+  padding: 1em 1.2em 1em 1.2em;
+  text-transform: uppercase;
+  color: #68dacd;
+  background-color: transparent;
+  border: #68dacd solid;
+  font-size: 1em;
+  width: 11em;
+  margin-left: 45%;
 }
 #hero-section h1{
   text-align: center;
@@ -112,6 +134,7 @@ nav {
 #hero-section p{
   text-align: center;
   display: flex;
+  
 
 }
 
@@ -144,10 +167,11 @@ nav {
   background-repeat: no-repeat;
   background-size: 100%;
   height: 80vh;
-  color: darkred;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 /* Expertise Section */
 
@@ -230,11 +254,23 @@ padding-right: 100px;
 .line{
   
   width: 5em;
-  border: #68dacd solid;
+  border:2px solid #68dacd ;
   display: inline-block;
   vertical-align: middle;
+  margin-left:44%;
+  margin-bottom: 10%;
   
 
+}
+.button-team{
+  padding: 1em 1.2em 1em 1.2em;
+  text-transform: uppercase;
+  color: #68dacd;
+  background-color: transparent;
+  border: #68dacd solid;
+  font-size: 1em;
+  width: 11em;
+  margin-left: 43%;
 }
 
   
@@ -355,27 +391,71 @@ form textarea {
 
 footer {
   background-image: url(images/bgk-footer.png);
-  background-repeat: no-repeat;
   background-size: cover;
-  height: 50em;
-  color: blueviolet;
+  color: white;
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  height: 50vh;
+  
+
 }
 
-.footer-wrapper{
-  border:2px solid #68dacd;
 
+#contact{
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
+
+.contact-data{
+
+ 
+  display: flex;
+  
+  
+}
+
+
 
 .company{
 
-  border: 2px solid green;
-}
+display: flex;
+align-items: center;
 
-.company{
-
-  border: 2px solid green;
 }
 .item-logo{
 
-  border: 2px solid green;
+ 
+  display: flex;
+  
 }
+
+.grid-item-media{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  grid-template-rows: inherit;
+  
+
+}
+.data-policy{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-left ul {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+
