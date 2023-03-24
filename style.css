@@ -101,6 +101,11 @@ nav {
   
 
 }
+nav ul a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.6s;
+}
 .nav-right li{
   align-items: center;
   padding-top: 20px;
@@ -117,6 +122,17 @@ nav {
   
 
 }
+.divider-hero{
+  display: flex;
+  width: 5em;
+  border: #68dacd solid;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left:47%;
+
+
+
+}
 .button-hero{
   padding: 1em 1.2em 1em 1.2em;
   text-transform: uppercase;
@@ -129,6 +145,7 @@ nav {
 }
 #hero-section h1{
   text-align: center;
+  
   
 }
 #hero-section p{
@@ -222,7 +239,7 @@ p {
   color: white;
   display: flex;
   justify-content: center;
-  height: 80vh;
+  height: 90vh;
   flex-direction: column;
   align-items: center;
 }
@@ -270,7 +287,8 @@ padding-right: 100px;
   border: #68dacd solid;
   font-size: 1em;
   width: 11em;
-  margin-left: 43%;
+  margin-left: 39%;
+  
 }
 
   
@@ -456,6 +474,7 @@ align-items: center;
  display: flex;
  justify-content: space-around;
  align-items: center;
+ list-style: none;
 }
 
 
